@@ -30,7 +30,7 @@ public class BaseClass
 		
 	}
 	@AfterMethod
-	public void closeApp(ITestResult r)
+	public void closeApp(ITestResult r) throws Throwable
 	{
 		int status= r.getStatus();
 		String name = r.getName();
